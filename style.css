@@ -1,54 +1,111 @@
-.logo {
-    height: 60px;
-    margin-right: 10px;
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
 }
 
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
 
-.navbar-nav .nav-link {
-    /* color: #000; */
-    font-weight: bold;
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    display: block;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+.phone-number {
+    margin-left: auto;
     font-size: 16px;
 }
 
-.badge-warning {
-    background-color: #ffa500;
-    color: #fff;
+.phone-number a {
+    text-decoration: none;
+    color: #333;
 }
 
-.profile-picture {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
+.phone-number i {
+    margin-right: 8px;
 }
-.search-01-icon {
-    height: 16px;
-    width: 16px;
-    position: relative;
-    min-height: 16px;
-  }
-  .search {
-    text-decoration: none;
-    position: relative;
-    font-size: 20px;
-    font-family: Epilogue;
-    color: #b0b0b0;
-    text-align: left;
-  }
-  .search-bar {
+
+.menu-toggle {
+    display: none;
     cursor: pointer;
-    border: 0;
-    padding: var(--padding-mini);
-    background-color: #f0f0f0;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-content: left;
-    gap: 5px;
-  }
-  .search-bar:hover {
-    background-color: #d6d6d6;
-  }
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
 
   section{
     padding: 2rem 5%;  
