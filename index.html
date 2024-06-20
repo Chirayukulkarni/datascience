@@ -19,34 +19,37 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">           
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>Home</strong></a>
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="certificationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Certification Courses <span class="badge badge-warning">OFFER</span>
+                    <a class="nav-link dropdown-toggle no-caret" href="#" id="courseDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <strong>Course</strong> 
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="certificationDropdown">
-                        <a class="dropdown-item" href="#">Course 1</a>
-                        <a class="dropdown-item" href="#">Course 2</a>
+                    <div class="dropdown-menu" aria-labelledby="courseDropdown">
+                        <a class="dropdown-item" href="#">Fullstack Development</a>
+                        <a class="dropdown-item" href="#">Website Development</a>
+                        <a class="dropdown-item" href="#">Java</a>
+                        <a class="dropdown-item" href="#">Python</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="placementDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Placement Guarantee Courses
+                    <a class="nav-link dropdown-toggle no-caret" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong> More</strong>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="placementDropdown">
-                        <a class="dropdown-item" href="#">Course 1</a>
-                        <a class="dropdown-item" href="#">Course 2</a>
+                    <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                        <a class="dropdown-item" href="#">Gallery</a>
+                        <a class="dropdown-item" href="#">Branches</a>
                     </div>
                 </li>
-                <div class="search-container">
-                    <button class="search-bar">
-                      <img class="search-01-icon" alt="" src="" />
-        
-                      <a class="search">Search</a>
-                    </button></div>
-
-                
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>About</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>Contact Us</strong> </a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         <img src="./image/profile.jfif" alt="Profile Picture" class="profile-picture">
@@ -55,7 +58,6 @@
             </ul>
         </div>
     </nav>
-
    <!-- home section  -->
    <section class="home" id="home">
     <div class="data">
@@ -257,6 +259,57 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- new enquiry form -->
+    <section class="enquire-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Enquire Now</h2>
+                    <p>Be ready to get your dream job in Full Stack domain. Our curriculum – Learn by doing, will help you to understand the concepts better. Our mentors will help you to guiding you.</p>
+                    <div class="info">
+                        <div>
+                            <i class="fa fa-users"></i>
+                            <p>25k<br><span>Students</span></p>
+                        </div>
+                        <div>
+                            <i class="fa fa-book"></i>
+                            <p>20+<br><span>Courses</span></p>
+                        </div>
+                        <div>
+                            <i class="fa fa-chalkboard-teacher"></i>
+                            <p>15+<br><span>Instructors</span></p>
+                        </div>
+                        <div>
+                            <i class="fa fa-globe"></i>
+                            <p>20+<br><span>Languages</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="enquiry-form">
+                        <h3>Enquire Now</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name: <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email: <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone: <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Mobile number" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enquire Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!-- counter start -->
 
@@ -674,7 +727,7 @@
 <div class="container">
     <div class="header">
         <h2><strong> Curriculum & Syllabus</h2>
-        <a href="#" class="download-btn">Download Curriculum</a>
+        <a href="#" class="download-btn">Download Courses Curriculum</a>
     </div>
     <div class="content">
         <div class="sidebar">
